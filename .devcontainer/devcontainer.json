@@ -4,7 +4,16 @@
 	"name": "Node.js & TypeScript",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   // https://mcr.microsoft.com/zh-cn/product/devcontainers/typescript-node/tags
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:22"
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GraphQL.vscode-graphql",
+				"GraphQL.vscode-graphql-syntax",
+				"GraphQL.vscode-graphql-execution"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
